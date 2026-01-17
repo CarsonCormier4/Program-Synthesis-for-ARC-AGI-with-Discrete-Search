@@ -1,14 +1,14 @@
-# Program Synthesis for ARC-AGI with Discrete Search
+# Program Synthesis for ARC-AGI Using Discrete Search
 
-This project implements a **program synthesis system** for solving tasks from the **Abstraction and Reasoning Corpus (ARC)** using **discrete search algorithms**. The system searches for grid transformation programs that map input examples to their correct outputs.
+This project explores solving problems from the Abstraction and Reasoning Corpus (ARC) by automatically generating small programs that transform input grids into their correct outputs.
 
-Candidate programs are constructed from a **contained domain-specific language (DSL)** of grid operations and explored using **Breadth-First Search (BFS)**, **Greedy Best-First Search (GBFS)**, and **A\***. Heuristics are used to guide the search toward promising transformations while keeping the search space manageable.
+The system builds candidate solutions using a limited set of grid operations and searches through them using algorithms such as Breadth-First Search (BFS), Greedy Best-First Search (GBFS), and A*. Heuristics guide the search toward likely solutions while keeping the search space manageable.
 
 ## Features
-- Program synthesis over a constrained DSL
+- Program synthesis using a constrained set of grid operations
 - Discrete search algorithms (BFS, GBFS, A*)
 - Heuristic-guided symbolic reasoning
-- Abstract syntax tree (AST) representation of programs
+- Programs represented as abstract syntax trees (ASTs)
 
 ## Technologies Used
 - Python
